@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import CompetitionItem from './components/competition/competitionItem';
+import Header from './components/header';
 
 class App extends Component {
   constructor(props) {
@@ -40,13 +42,13 @@ class App extends Component {
     let { isLoaded, items } = this.state;
 
     if (!isLoaded) {
-      console.log(this.apikey)
       return <div>Loading...</div>
     }
     else {
     return (
       <div className="App">
-
+        <Header />
+        <CompetitionItem />
       </div>
     );
     }
