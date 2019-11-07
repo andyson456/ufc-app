@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <CompetitionItem />
+        <CompetitionItem items={items}/>
       </div>
     );
     }
