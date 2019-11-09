@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { NavLink, Route } from 'react-router-dom';
+import routes from "../../routes";
 
 export default class Header extends Component {
     constructor(props){
@@ -16,9 +18,14 @@ export default class Header extends Component {
         return(
           <Card>
           
-            <Tab label="Competitions" />
-            <Tab label="Rankings" />
-            <Tab label="Upcoming Events" />
+            <NavLink className={'nav-link'} activeClassName={'active'}
+            to={routes.competitions}><Tab label="Competitions" /></NavLink>
+
+            <NavLink className={'nav-link'} activeClassName={'active'}
+            to={routes.rankings}><Tab label="Rankings" /></NavLink>
+
+            <NavLink className={'nav-link'} activeClassName={'active'}
+            to={routes.upcomingEvents}><Tab label="Upcoming Events" /></NavLink>
           
         </Card>
         )

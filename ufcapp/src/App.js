@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import CompetitionItem from './components/competition/competitionItem';
+import Competitions from './components/competition/index';
 import Header from './components/header';
 import routes from './routes';
 import {Route} from 'react-router-dom';
+import Rankings from './components/rankings';
+import UpcomingEvents from './components/Events';
 
 class App extends Component {
   constructor(props) {
@@ -50,9 +52,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <CompetitionItem items={items}/>
+        <Competitions items={items}/>
       
-        <Route exact path={routes.competitions} component={CompetitionItem} />
+        <Route exact path={routes.competitions} component={Competitions} />
+        <Route exact path={routes.rankings} component={Rankings} />
+        <Route exact path={routes.upcomingEvents} component={UpcomingEvents} />
    
       </div>
     );
