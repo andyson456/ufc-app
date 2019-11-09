@@ -4,7 +4,7 @@ import Header from './components/header';
 import routes from './routes';
 import {Route} from 'react-router-dom';
 import Rankings from './components/rankings';
-import UpcomingEvents from './components/Events';
+import UpcomingEvents from './components/events';
 
 class App extends Component {
   constructor(props) {
