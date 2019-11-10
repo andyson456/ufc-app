@@ -14,6 +14,7 @@ export default class Competitions extends Component {
     
     }
     
+    
     render() {
         const useStyles = makeStyles(theme => ({
             root: {

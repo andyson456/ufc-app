@@ -5,14 +5,28 @@ export default class Rankings extends Component {
     constructor(props){
       super(props)
       this.state = {
+        items: [],
+        isLoaded: false
       }
+    }
+
+    componentDidMount() {
+      fetch(`http://localhost:3333/api/rankings/`)
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          this.setState({
+            items: data,
+            isLoaded: true
+          })
+        })
     }
     
       render() {
-        
+
         return(
           <div>
-              <p>This is the rankings page</p>
+            <h1>Rankings</h1>
           </div>
         )
     }

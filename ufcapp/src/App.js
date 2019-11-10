@@ -24,7 +24,6 @@ class App extends Component {
           try {
               const data = JSON.parse(text);
               return data;
-              // Do your JSON handling here
           } catch(err) {
             console.log(err)
           }
