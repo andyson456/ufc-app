@@ -73,61 +73,13 @@ export default class Competitions extends Component {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    <StyledTableRow>
+                    {this.props.items.competitions.map( c => {
+                        return <StyledTableRow key={c.name}>
                         <StyledTableCell>
-                            {this.props.items.competitions[0].name}
+                            {c.name}
                         </StyledTableCell>
                     </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[1].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[2].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[3].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[4].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[5].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[6].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[7].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[8].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[9].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    <StyledTableRow>
-                        <StyledTableCell>
-                            {this.props.items.competitions[10].name}
-                        </StyledTableCell>
-                    </StyledTableRow>
+                    })}
                 </TableBody>
             </Table>
         </Card>
