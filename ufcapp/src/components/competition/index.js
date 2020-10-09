@@ -6,14 +6,16 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import { mapStateToProps, mapDispatchToProps } from "../../actions";
+import { connect } from "react-redux";
 
-export default class Competitions extends Component {
+class competitions extends Component {
     constructor(props){
       super(props)
-    this.state = {}
-    
+      this.state = {
+        redirect: false
+      };
     }
-    
     
     render() {
         const useStyles = makeStyles(theme => ({
@@ -57,32 +59,43 @@ export default class Competitions extends Component {
             createData('Gingerbread', 356, 16.0, 49, 3.9),
           ];
 
-          const compArray = this.props.items.competitions;
+          // const compArray = this.props.competitions;
 
-          compArray.forEach(element => {
-              this.comps = element.name;
-          });
+          // compArray.forEach(element => {
+          //     this.comps = element.name;
+          // });
 
     console.dir(this.props);
     return(
-        <Card>
-            <Table aria-label="customized table">
-                <TableHead>
-                    <TableRow>
-                        <StyledTableCell>Competition Name</StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {this.props.items.competitions.map( c => {
-                        return <StyledTableRow key={c.name}>
-                        <StyledTableCell>
-                            {c.name}
-                        </StyledTableCell>
-                    </StyledTableRow>
-                    })}
-                </TableBody>
-            </Table>
-        </Card>
+        // <Card>
+        //     <Table aria-label="customized table">
+        //         <TableHead>
+        //             <TableRow>
+        //                 <StyledTableCell>Competition Name</StyledTableCell>
+        //             </TableRow>
+        //         </TableHead>
+        //         <TableBody>
+        //             {this.props.competitions.map( c => {
+        //                 return <StyledTableRow key={c.name}>
+        //                 <StyledTableCell>
+        //                     {c.name}
+        //                 </StyledTableCell>
+        //             </StyledTableRow>
+        //             })}
+        //         </TableBody>
+        //     </Table>
+        // </Card>
+
+    <h1>Jake Help</h1>
+
+          // this.props.competitions.map( c => {
+          //   return <h4 key={c.name}></h4>;
+          // })
+          
         )
     }
 }
+
+const Competitions = connect(mapStateToProps, mapDispatchToProps)(competitions);
+
+export default Competitions;

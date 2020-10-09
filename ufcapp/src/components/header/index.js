@@ -1,10 +1,10 @@
 import { Card } from "@material-ui/core";
 import React, { Component } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { NavLink, Route } from 'react-router-dom';
-import routes from "../../routes";
+import Home from "../home";
+import CompetitionRoute from "../../routes/competition";
+import RankingRoute from "../../routes/ranking";
 
 export default class Header extends Component {
     constructor(props){
@@ -17,15 +17,18 @@ export default class Header extends Component {
         
         return(
           <Card>
+
+            <NavLink className={'nav-link'} activeClassName={'active'}
+            to={<Home />}><Tab label="Home" /></NavLink>
           
             <NavLink className={'nav-link'} activeClassName={'active'}
-            to={routes.competitions}><Tab label="Competitions" /></NavLink>
+            to={<CompetitionRoute />}><Tab label="Competitions" /></NavLink>
 
             <NavLink className={'nav-link'} activeClassName={'active'}
-            to={routes.rankings}><Tab label="Rankings" /></NavLink>
+            to={<RankingRoute />}><Tab label="Rankings" /></NavLink>
 
-            <NavLink className={'nav-link'} activeClassName={'active'}
-            to={routes.upcomingEvents}><Tab label="Upcoming Events" /></NavLink>
+            {/* <NavLink className={'nav-link'} activeClassName={'active'}
+            to={routes.upcomingEvents}><Tab label="Upcoming Events" /></NavLink> */}
           
         </Card>
         )

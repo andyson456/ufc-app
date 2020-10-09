@@ -17,17 +17,17 @@ export default class Rankings extends Component {
       }
     }
 
-    componentDidMount() {
-      fetch(`http://localhost:3333/api/rankings/`)
-        .then(res => res.json())
-        .then(data => {
-          console.log(data);
-          this.setState({
-            items: data,
-            isLoaded: true
-          })
-        })
-    }
+    // componentDidMount() {
+    //   fetch(`http://localhost:3333/api/rankings/`)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //       console.log(data);
+    //       this.setState({
+    //         items: data,
+    //         isLoaded: true
+    //       })
+    //     })
+    // }
     
       render() {
         const useStyles = makeStyles(theme => ({
@@ -74,6 +74,7 @@ export default class Rankings extends Component {
                 <TableBody>
                     {this.state.items.rankings.map( r => {
                       return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+                      
                     })}
                 </TableBody>
             </Table>
