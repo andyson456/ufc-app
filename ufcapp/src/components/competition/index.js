@@ -85,8 +85,13 @@ class competitions extends Component {
         //         </TableBody>
         //     </Table>
         // </Card>
-
+    //   <React.Fragment>
     <h1>Jake Help</h1>
+    // <h2>{this.props.competitions.map( r => {
+    //   return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+      
+    // })}</h2>
+    // </React.Fragment>
 
           // this.props.competitions.map( c => {
           //   return <h4 key={c.name}></h4>;

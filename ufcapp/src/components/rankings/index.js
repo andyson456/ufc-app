@@ -6,14 +6,17 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import { connect } from "react-redux";
+import { mapStateToProps, mapDispatchToProps } from '../../actions';
 
 
-export default class Rankings extends Component {
+class rankings extends Component {
     constructor(props){
       super(props)
       this.state = {
-        items: {rankings: []},
-        isLoaded: false
+        // items: {rankings: []},
+        // isLoaded: false,
+        redirect: false
       }
     }
 
@@ -59,27 +62,40 @@ export default class Rankings extends Component {
           },
         }))(TableRow);
 
+        console.log(this.props);
+
         return(
-          <div>
-            <Card>
-            <h1>Rankings</h1>
-            <Table aria-label="customized table">
-                <TableHead>
-                    <TableRow>
-                        <StyledTableCell>Division</StyledTableCell>
-                        <StyledTableCell align="right">Competitor</StyledTableCell>
-                        <StyledTableCell align="right">Rank</StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {this.state.items.rankings.map( r => {
-                      return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+          // <div>
+          //   <Card>
+          //   <h1>Rankings</h1>
+          //   <Table aria-label="customized table">
+          //       <TableHead>
+          //           <TableRow>
+          //               <StyledTableCell>Division</StyledTableCell>
+          //               <StyledTableCell align="right">Competitor</StyledTableCell>
+          //               <StyledTableCell align="right">Rank</StyledTableCell>
+          //           </TableRow>
+          //       </TableHead>
+          //       <TableBody>
+          //           {this.props.rankings.map( r => {
+          //             return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
                       
-                    })}
-                </TableBody>
-            </Table>
-            </Card>
-          </div>
+          //           })}
+          //       </TableBody>
+          //   </Table>
+          //   </Card>
+          // </div>
+          <React.Fragment>
+            <h1>JEK PREEEEEASE</h1>
+            {/* <h2>{this.props.rankings.map( r => {
+                    return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+                      
+                    })}</h2> */}
+          </React.Fragment>
         )
     }
 }
+
+const Rankings = connect(mapStateToProps, mapDispatchToProps)(rankings);
+
+export default Rankings;
