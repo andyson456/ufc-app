@@ -65,33 +65,33 @@ class rankings extends Component {
         console.log(this.props);
 
         return(
-          // <div>
-          //   <Card>
-          //   <h1>Rankings</h1>
-          //   <Table aria-label="customized table">
-          //       <TableHead>
-          //           <TableRow>
-          //               <StyledTableCell>Division</StyledTableCell>
-          //               <StyledTableCell align="right">Competitor</StyledTableCell>
-          //               <StyledTableCell align="right">Rank</StyledTableCell>
-          //           </TableRow>
-          //       </TableHead>
-          //       <TableBody>
-          //           {this.props.rankings.map( r => {
-          //             return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+          <div>
+            <Card>
+            <h1>Rankings</h1>
+            <Table aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                        <StyledTableCell>Division</StyledTableCell>
+                        <StyledTableCell align="right">Competitor</StyledTableCell>
+                        <StyledTableCell align="right">Rank</StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {this.props.rankings.map( r => {
+                      return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
                       
-          //           })}
-          //       </TableBody>
-          //   </Table>
-          //   </Card>
-          // </div>
-          <React.Fragment>
-            <h1>JEK PREEEEEASE</h1>
-            {/* <h2>{this.props.rankings.map( r => {
-                    return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
+                    })}
+                </TableBody>
+            </Table>
+            </Card>
+          </div>
+          // <React.Fragment>
+          //   <h1>JEK PREEEEEASE</h1>
+          //   <h2>{this.props.rankings.map( r => {
+          //           return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
                       
-                    })}</h2> */}
-          </React.Fragment>
+          //           })}</h2>
+          // </React.Fragment>
         )
     }
 }

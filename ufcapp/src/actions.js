@@ -11,12 +11,12 @@ export function mapDispatchToProps(dispatch) {
         loadCompetitions: function (){
         fetch(`http://localhost:3333/api/competitions/`)
         .then((res) => res.json())
-        .then((data) => dispatch({type: "LOAD_COMPETITIONS", competitions: data}))
+        .then((data) => dispatch({type: "LOAD_COMPETITIONS", competitions: data.competitions}))
         },
         loadRankings: function (){
         fetch(`http://localhost:3333/api/rankings/`)
         .then((res) => res.json())
-        .then((data) => dispatch({type: "LOAD_RANKINGS", rankings: data}))
+        .then((data) => dispatch({type: "LOAD_RANKINGS", rankings: data.rankings}))
         },
     }
 }

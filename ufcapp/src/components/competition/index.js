@@ -65,28 +65,30 @@ class competitions extends Component {
           //     this.comps = element.name;
           // });
 
-    console.dir(this.props);
+    // console.dir(this.props.competitions.competitions);
+    // console.dir(typeof this.props.competitions.competitions);
+    // console.dir(Object.keys(this.props.competitions));
     return(
-        // <Card>
-        //     <Table aria-label="customized table">
-        //         <TableHead>
-        //             <TableRow>
-        //                 <StyledTableCell>Competition Name</StyledTableCell>
-        //             </TableRow>
-        //         </TableHead>
-        //         <TableBody>
-        //             {this.props.competitions.map( c => {
-        //                 return <StyledTableRow key={c.name}>
-        //                 <StyledTableCell>
-        //                     {c.name}
-        //                 </StyledTableCell>
-        //             </StyledTableRow>
-        //             })}
-        //         </TableBody>
-        //     </Table>
-        // </Card>
+        <Card>
+            <Table aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                        <StyledTableCell>Competition Name</StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {this.props.competitions.map( (c, i) => {
+                        return <StyledTableRow key={i}>
+                        <StyledTableCell>
+                            {c.name}
+                        </StyledTableCell>
+                    </StyledTableRow>
+                    })}
+                </TableBody>
+            </Table>
+        </Card>
     //   <React.Fragment>
-    <h1>Jake Help</h1>
+    // <h1>Jake Help</h1>
     // <h2>{this.props.competitions.map( r => {
     //   return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
       
