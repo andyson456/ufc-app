@@ -14,36 +14,11 @@ class rankings extends Component {
     constructor(props){
       super(props)
       this.state = {
-        // items: {rankings: []},
-        // isLoaded: false,
         redirect: false
       }
     }
-
-    // componentDidMount() {
-    //   fetch(`http://localhost:3333/api/rankings/`)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //       console.log(data);
-    //       this.setState({
-    //         items: data,
-    //         isLoaded: true
-    //       })
-    //     })
-    // }
     
       render() {
-        const useStyles = makeStyles(theme => ({
-          root: {
-            width: '100%',
-            marginTop: theme.spacing(3),
-            overflowX: 'auto',
-          },
-          table: {
-            minWidth: 700,
-          },
-        }));
-
         const StyledTableCell = withStyles(theme => ({
           head: {
             backgroundColor: theme.palette.common.black,
@@ -72,26 +47,20 @@ class rankings extends Component {
                 <TableHead>
                     <TableRow>
                         <StyledTableCell>Division</StyledTableCell>
-                        <StyledTableCell align="right">Competitor</StyledTableCell>
-                        <StyledTableCell align="right">Rank</StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {this.props.rankings.map( r => {
-                      return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
-                      
+                      return <StyledTableRow key={r.name}>
+                          <StyledTableCell>
+                            {r.name}
+                          </StyledTableCell>
+                        </StyledTableRow>           
                     })}
                 </TableBody>
             </Table>
             </Card>
           </div>
-          // <React.Fragment>
-          //   <h1>JEK PREEEEEASE</h1>
-          //   <h2>{this.props.rankings.map( r => {
-          //           return <StyledTableRow key={r.name}><h3>{r.name}</h3></StyledTableRow>
-                      
-          //           })}</h2>
-          // </React.Fragment>
         )
     }
 }
