@@ -18,7 +18,7 @@ export default class Home extends Component {
           <React.Fragment>
             <Jumbotron>
               <div style={{textAlign:'center'}}>
-                <h1>Welcome to UFCNerds</h1>
+                <h1>Welcome to UFCNerd</h1>
                 <p>
                   Keep up on the latest events, rankings, trends and merchandise in an evergrowing community of combat sports!
                 </p>
@@ -39,8 +39,8 @@ export default class Home extends Component {
                     height="600"
                   />
                   <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Upcoming Events</h3>
+                    <p>Keep up on upcoming events</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -53,8 +53,8 @@ export default class Home extends Component {
                   />
 
                   <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Fighter Rankings</h3>
+                    <p>Keep track of fighter rankings in all divisions</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -67,8 +67,8 @@ export default class Home extends Component {
                   />
 
                   <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Past Events</h3>
+                    <p>Look up past events and statistics</p>
                   </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
