@@ -73,8 +73,6 @@ export default class Home extends Component {
                 </Carousel.Item>
               </Carousel>
             </div>
-
-            <h1>HENLO FWEN</h1>
           </React.Fragment>
         )
     }

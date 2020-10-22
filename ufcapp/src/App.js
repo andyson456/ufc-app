@@ -12,6 +12,7 @@ import RankingRoute from './routes/ranking';
 import Home from './components/home';
 import { connect } from 'react-redux';
 import Header from './components/header';
+import Footer from './components/footer';
 
 function app() {
   return (
@@ -34,6 +35,9 @@ function app() {
             <RankingRoute />
           </Route>
         </Switch>
+        <div>
+          <Footer />
+        </div>
       </div>
     </Router>
   );
