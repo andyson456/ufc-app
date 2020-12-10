@@ -27,7 +27,7 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="www.google.com">
+            <Card.Link href="/juijitsu">
                 <Card>
                     <Card.Img variant="top" 
                         src="https://www.tutorialspoint.com/brazilian_jiu_jitsu/images/bjj.jpg"  
@@ -39,7 +39,7 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="www.google.com">
+            <Card.Link href="/judo">
                 <Card>
                 <Card.Img variant="top" 
                         src="https://www.amakella.com/wp-content/uploads/2020/08/Judo-throw-1024x683.jpg"  
@@ -51,7 +51,7 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="www.google.com">
+            <Card.Link href="/wrestling">
                 <Card>
                 <Card.Img variant="top" 
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FreestyleWrestling2.jpg/1200px-FreestyleWrestling2.jpg"  
@@ -63,7 +63,7 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="www.google.com">
+            <Card.Link href="/karate">
                 <Card>
                 <Card.Img variant="top" 
                         src="https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"  
@@ -75,7 +75,7 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="www.google.com">
+            <Card.Link href="/muaythai">
                 <Card>
                 <Card.Img variant="top" 
                         src="https://cdn.theculturetrip.com/wp-content/uploads/2017/08/shutterstock_680671831.jpg"  

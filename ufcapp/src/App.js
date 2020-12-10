@@ -16,6 +16,11 @@ import Footer from './components/footer';
 import Contact from './components/contact';
 import Categories from './components/categories';
 import Boxing from './components/categories/boxing';
+import Judo from './components/categories/judo';
+import Karate from './components/categories/karate';
+import Juijitsu from './components/categories/juijitsu';
+import Wrestling from './components/categories/wrestling';
+import Muaythai from './components/categories/muaythai';
 
 function app() {
   return (
@@ -44,6 +49,21 @@ function app() {
             </Route>
             <Route path="/boxing">
               <Boxing />
+            </Route>
+            <Route path="/judo">
+              <Judo />
+            </Route>
+            <Route path="/karate">
+              <Karate />
+            </Route>
+            <Route path="/juijitsu">
+              <Juijitsu />
+            </Route>
+            <Route path="/wrestling">
+              <Wrestling />
+            </Route>
+            <Route path="/muaythai">
+              <Muaythai />
             </Route>
           </Switch>
         </div>
