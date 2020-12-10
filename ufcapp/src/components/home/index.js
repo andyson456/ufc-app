@@ -4,6 +4,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import './style.css';
+import { Card } from '@material-ui/core';
+import CardColumns from 'react-bootstrap/CardColumns';
+import Categories from '../categories';
 
 
 export default class Home extends Component {
@@ -73,9 +76,12 @@ export default class Home extends Component {
                 </Carousel.Item>
               </Carousel>
             </div>
+            
+          <div>
+            <Categories />
+          </div>
+
           </React.Fragment>
         )
     }
 }
-
-// src="https://images.indianexpress.com/2020/05/ufc-249-gaethje-ferguson-fb.jpg"

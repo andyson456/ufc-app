@@ -8,7 +8,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { connect } from "react-redux";
 import { mapStateToProps, mapDispatchToProps } from '../../actions';
-import RankingItem from './rankingItem';
 
 
 class rankings extends Component {
@@ -43,7 +42,6 @@ class rankings extends Component {
         return(
           <div>
             <Card>
-            <h1>Rankings</h1>
             <Table aria-label="customized table">
                 <TableHead>
                     <TableRow>

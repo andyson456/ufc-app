@@ -13,6 +13,9 @@ import Home from './components/home';
 import { connect } from 'react-redux';
 import Header from './components/header';
 import Footer from './components/footer';
+import Contact from './components/contact';
+import Categories from './components/categories';
+import Boxing from './components/categories/boxing';
 
 function app() {
   return (
@@ -21,24 +24,32 @@ function app() {
         <nav>
           <Header />
         </nav>
+        </div>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/competitions">
-            <CompetitionRoute />
-          </Route>
-          <Route path="/rankings">
-            <RankingRoute />
-          </Route>
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/competitions">
+              <CompetitionRoute />
+            </Route>
+            <Route path="/rankings">
+              <RankingRoute />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/boxing">
+              <Boxing />
+            </Route>
+          </Switch>
+        </div>
         <div>
           <Footer />
         </div>
-      </div>
     </Router>
   );
 }

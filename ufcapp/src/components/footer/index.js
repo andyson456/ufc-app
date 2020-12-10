@@ -43,7 +43,7 @@ export default class Footer extends Component {
                             <ul class="footer-links">
                             <li><a href="/competitions">Events</a></li>
                             <li><a href="/rankings">Rankings</a></li>
-                            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                             <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
                         </ul>
                     </div>
