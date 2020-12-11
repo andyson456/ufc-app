@@ -97,7 +97,7 @@ export default class Boxing extends Component {
                     <td>3</td>
                     <td>Jorge</td>
                     <td>Masvidal</td>
-                    <td>Lightweight</td>
+                    <td>Welterweight</td>
                   </tr>
                   <tr>
                     <td>4</td>
