@@ -77,7 +77,7 @@ export default class Home extends Component {
               </Carousel>
             </div>
             
-          <div>
+          <div class="w3-container">
             <Categories />
           </div>
 
