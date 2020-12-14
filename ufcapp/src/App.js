@@ -56,7 +56,7 @@ function app() {
             <Route path="/karate">
               <Karate />
             </Route>
-            <Route path="/juijitsu">
+            <Route path="/jiujitsu">
               <Juijitsu />
             </Route>
             <Route path="/wrestling">

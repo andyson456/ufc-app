@@ -30,7 +30,7 @@ export default class Wrestling extends Component {
               <Nav.Link href="/karate">Karate</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/juijitsu">Jui Jitsu</Nav.Link>
+              <Nav.Link href="/jiujitsu">Jiu Jitsu</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/wrestling">Wrestling</Nav.Link>

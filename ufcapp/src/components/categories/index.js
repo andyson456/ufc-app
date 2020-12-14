@@ -27,14 +27,14 @@ export default class Categories extends Component {
                 </Card>
             </Card.Link>
 
-            <Card.Link href="/juijitsu">
+            <Card.Link href="/jiujitsu">
                 <Card>
                     <Card.Img variant="top" 
                         src="https://www.tutorialspoint.com/brazilian_jiu_jitsu/images/bjj.jpg"  
                         width="100"
                         height="300"/>
                     <Card.Body>
-                    <Card.Title><h3 style={{fontFamily:'verdana'}}>JUI JITSU</h3></Card.Title>
+                    <Card.Title><h3 style={{fontFamily:'verdana'}}>JIU JITSU</h3></Card.Title>
                     </Card.Body>
                 </Card>
             </Card.Link>

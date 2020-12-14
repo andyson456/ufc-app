@@ -7,7 +7,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Nav from 'react-bootstrap/Nav';
 
-export default class Juijitsu extends Component {
+export default class Jiujitsu extends Component {
     constructor(props){
       super(props)
       this.state = {
@@ -30,7 +30,7 @@ export default class Juijitsu extends Component {
               <Nav.Link href="/karate">Karate</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/juijitsu">Jui Jitsu</Nav.Link>
+              <Nav.Link href="/jiujitsu">Jiu Jitsu</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/wrestling">Wrestling</Nav.Link>
